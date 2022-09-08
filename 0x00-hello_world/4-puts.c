@@ -5,7 +5,8 @@
 *Return: Always 0 (success)X
 */
 
-int main(){
+int main()
+{
 puts ("\"Programming is like building a multilingual puzzle");
 return 0;
 }
