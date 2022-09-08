@@ -1,5 +1,9 @@
 #include <stdio.h>
-/* program entry is main*/
+/**
+*main -entry point
+*
+*Return: Always 0 (success)X
+*/
 
 int main(){
 puts ("\"Programming is like building a multilingual puzzle");
