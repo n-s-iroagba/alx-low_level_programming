@@ -6,14 +6,21 @@
 int main(void)
 {
 int i = 0;
-for (i = 0; i <= 9; i++)
+while (i < 9)
 {
 int j = i + 1;
-for (; j <= 9; j++)
+while (j < !0)
+{
 putchar(i % 10 + '0');
 putchar(j % 10 + '0');
+if (i != 8 && j != 9)
+{
 putchar(',');
 putchar(' ');
+}
+j++;
+}
+++i
 }
 putchar('\n');
 return (0);
