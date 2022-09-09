@@ -9,7 +9,7 @@ char ch = 'a';
 char cb = 'A'
 for (ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
-for (cb = 'A'; ch <= 'Z'; ch++)
+for (cb = 'A'; cb <= 'Z'; cb++)
 putchar(ch);
 putchar('\n');
 return (0);
