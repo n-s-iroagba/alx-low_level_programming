@@ -20,7 +20,7 @@ putchar(' ');
 }
 j++;
 }
-++i
+i++;
 }
 putchar('\n');
 return (0);
