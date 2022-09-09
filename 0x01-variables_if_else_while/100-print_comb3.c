@@ -9,7 +9,7 @@ int i = 0;
 for (i = 0; i <= 9; i++)
 {
 int j = i + 1;
-for (; j <= 9, j++)
+for (; j <= 9; j++)
 putchar(i % n + '0');
 putchar(j % n + '0');
 putchar(",");
