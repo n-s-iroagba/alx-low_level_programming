@@ -5,27 +5,20 @@
 */
 int main(void)
 {
-int i = 0;
-while (i < 9)
+int d1, d2, n = 0;
+
+for (d1 = '0'; d1 <= '9'; d1++)
 {
-int j = i + 1;
-while (j < 10)
+for (d2 = d1 + 1; d2 <= '9'; d2++, n++)
 {
-putchar(i % 10 + '0');
-putchar(j % 10 + '0');
-if (i == 8 && j == 9)
-{
-break;
-}
-else
+if (n > 0)
 {
 putchar(',');
 putchar(' ');
 }
+putchar(d1);
+putchar(d2);
 }
-j++;
-}
-i++;
 }
 putchar('\n');
 return (0);
