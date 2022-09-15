@@ -8,7 +8,7 @@ x#include"main.h"
 */
 
 
-nt print_line(int n)
+int print_line(int n)
 {
 if (n <= 0)
 	{
