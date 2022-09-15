@@ -8,12 +8,11 @@ x#include"main.h"
 */
 
 
-int print_line(int n)
+void print_line(int n)
 {
 if (n <= 0)
 	{
 	_putchar('\n');
-	return (0);
 	}
 else
 	{
@@ -23,6 +22,5 @@ else
 		n--;
 		}
 	_putchar('\n');
-	return (0);
 	}
 }
