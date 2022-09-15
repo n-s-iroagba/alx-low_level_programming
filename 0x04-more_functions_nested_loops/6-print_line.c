@@ -7,16 +7,22 @@ x#include"main.h"
  *     should be printed
 */
 
-void print_line(int n)
-{
-	int lnChr;
 
-	if (n <= 0)
-		putchar('\n');
-	else
+nt print_line(int n)
+{
+if (n <= 0)
 	{
-		for (lnChr = 1; lnChr <= n; ++lnChr)
-			_putchar('_');
-		putchar('\n');
+	_putchar('\n');
+	return (0);
+	}
+else
+	{
+	while (n > 0)
+		{
+		_putchar('_');
+		n--;
+		}
+	_putchar('\n');
+	return (0);
 	}
 }

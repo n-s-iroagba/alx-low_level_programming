@@ -6,11 +6,14 @@
  *
  * Return: 1 if is digit, 0 if not
 */
-
 int _isdigit(int c)
 {
-	if (c >= 48 && c <= 57)
+int item;
+
+for (item = '0'; item <= '9'; item++)
+	{
+	if (item == c)
 		return (1);
-	else
-		return (0);
+	}
+return (0);
 }
