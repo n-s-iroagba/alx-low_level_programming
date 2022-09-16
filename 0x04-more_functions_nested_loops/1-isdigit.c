@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * isdigit - checks if input is digit between 0 - 9
+ *_isdigit - checks if input is digit between 0 - 9
  *
  * @c: input
  *
@@ -11,9 +11,11 @@ int _isdigit(int c)
 char item;
 
 for (item = '0'; item <= '9'; item++)
-	{
-	if (item == c)
-		return (1);
-	}
+{
+if (item == c)
+return (1);
 return (0);
+
+}
+
 }
