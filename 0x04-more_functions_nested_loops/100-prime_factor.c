@@ -9,19 +9,26 @@
  *
 */
 
-void prime(void)
+int main(void)
 {
-long n = 612852475143;
-int i;
-long x = n / 3;
-int prime = 1;
-for (i = 1; i <= x; i++)
-{
-if ((n % i == 0) &&  i > prime)
-{
-prime = i;
-}
+	long prime = 612852475143, div;
 
-}
-printf("%d", prime);
+	while (div < (prime / 2))
+	{
+		if ((prime % 2) == 0)
+		{
+			prime /= 2;
+			continue;
+		}
+
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
+		}
+	}
+
+	printf("%ld\n", prime);
+
+	return (0);
 }
