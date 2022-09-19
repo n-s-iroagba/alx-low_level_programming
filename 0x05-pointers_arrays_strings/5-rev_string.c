@@ -12,8 +12,8 @@
 void rev_string(char *s)
 {
 char *p = s;
-char t [strlen(s)];
-int index = strlen(s) ;
+char t[10];
+int index = strlen(s);
 int i = 0;
 while (s[index] != '\0')
 {
@@ -23,6 +23,6 @@ index--;
 i++;
 
 }
-strcpy(p,t);
+strcpy(p, t);
 
 }
