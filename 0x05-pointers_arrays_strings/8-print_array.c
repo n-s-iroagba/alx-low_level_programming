@@ -7,10 +7,10 @@
 
 void print_array(int *a, int n)
 {
-int i,p = 0;
+int i, p = 0;
 for (i = 0; i < n; i++)
 {
-if(p != 0)
+if (p != 0)
 {
 printf(", ");
 
