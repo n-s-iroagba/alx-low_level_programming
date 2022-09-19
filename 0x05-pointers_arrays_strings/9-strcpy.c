@@ -1,6 +1,6 @@
 /**
 **_strcpy - function
-*Return :  dest
+*Return: dest
 *@dest:char parameter
 *@src: char parameter
 */
