@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 int negative = 0, n, i;
-signed int *num;
+unsigned int *num;
 num = malloc(sizeof(int));
 n = strlen(s);
 for (i = 0; i < n; i++)
