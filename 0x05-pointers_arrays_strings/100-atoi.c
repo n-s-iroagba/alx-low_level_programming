@@ -10,10 +10,10 @@
 
 int _atoi(char *s)
 {
-int negative = 0, n, *num;
+int negative = 0, n, *num, i;
 num = malloc(sizeof(int));
 n = strlen(s);
-for (int i = 0; i < n; i++)
+for (i = 0; i < n; i++)
 {
 if (s[i] > '9' && s[i - 2] >= '0' && s[i - 2] <= '9' && *num > 0)
 {
