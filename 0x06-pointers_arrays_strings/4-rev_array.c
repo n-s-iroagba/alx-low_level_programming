@@ -3,19 +3,20 @@
 /**
 *reverse_array -function
 *@a : int array
-*@n : int parameter
+*@n: int parameter
 */
 void reverse_array(int *a, int n)
 {
+
 int m = n - 1;
-while (m >= 0)
+int i = 1;
+for (i = m; i >= 0; i--)
 {
 if (m != n - 1)
 {
 printf(", ");
 }
 printf("%i", a[m]);
-m--;
 }
 putchar('\n');
 
