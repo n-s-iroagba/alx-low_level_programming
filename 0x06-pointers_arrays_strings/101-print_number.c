@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_number - Prints a passed number to stdout
  * @n: This is the number to be printed
