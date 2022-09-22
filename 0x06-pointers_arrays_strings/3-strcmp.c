@@ -10,7 +10,7 @@
 int _strcmp(char *s1, char *s2)
 {
 int n, i, num;
-int* value;
+int *value;
 value = malloc(sizeof(int));
 if (strlen(s1) < strlen(s2))
 {
