@@ -23,12 +23,12 @@ return (0);
 else
 {
 
-unsigned long sum, num1, num2;
+int sum, num1, num2;
 num1 = atoi(n1);
 num2 = atoi(n2);
 sum = num1 + num2;
-printf("%lu", sum);
-*r = sum;
+printf("%i", sum);
+*r = sum + '0';
 return (r);
 
 }
