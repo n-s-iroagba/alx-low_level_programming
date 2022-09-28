@@ -18,3 +18,14 @@ int is_prime(int n, int y)
 	else
 		return (is_prime(n, y + 1));
 }
+
+/**
+ * is_prime_number - Returns whether prime or not to main
+ * @n: The number
+ *
+ * Return: An int 1 0r 0 to show prime or not resp.
+ */
+int is_prime_number(int n)
+{
+	return (is_prime(n, 1));
+}
