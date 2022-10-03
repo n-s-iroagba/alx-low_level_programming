@@ -1,52 +1,49 @@
 #include "main.h"
-#include <string.h>
 #include <stdlib.h>
 
 /**
-*str_concat- function
-*@s1: char params
-*@s2: char params
-*Return: char pointer
-*/
-
+ * str_concat - Concatenates two strings
+ * @s1: The first string
+ * @s2: The second string
+ *
+ * Return: The concatenated string
+ */
 char *str_concat(char *s1, char *s2)
 {
-char *a;
-int i;
-int count;
-int o = strlen(s2);
-int n = strlen(s1);
-int m = n + o + 4;
-if (s1 == NULL)
-{
-return (s2);
-}
-else if (s2 == NULL)
-{
-return (s1);
-}
-else if (s1 && s2)
-{
-a = malloc(sizeof(char) * m);
-count = 0;
-for (i = 0; i < n; i++)
-{
-a[count] = s1[i];
-count++;
-}
+	int i, j, k, new_str_len, counter;
+	char *new_str;
 
-for (i = 0; i < o; i++)
-{
-a[count] = s2[i];
-count++;
-}
-a[count] = '\0';
-return (a);
-}
-else
-{
-return (NULL);
-}
-}
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
+	for (i = 0; s1[i] != '\0'; i++)
+		continue;
+	for (j = 0; s2[j] != '\0'; j++)
+		continue;
 
+	new_str_len = (i + j) + 1;
+
+	new_str = malloc(new_str_len);
+	if (new_str == NULL)
+		return (NULL);
+
+	counter = 0;
+
+	for (k = 0; k < i; k++)
+	{
+		new_str[counter] = s1[k];
+		counter++;
+
+	}
+	for (k = 0; k < j; k++)
+	{
+		new_str[counter] = s2[k];
+		counter++;
+	}
+
+	new_str[counter] = '\0';
+
+	return (new_str);
+}
