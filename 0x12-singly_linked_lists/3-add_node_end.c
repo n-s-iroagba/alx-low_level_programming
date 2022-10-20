@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
 *add_node_end - function
-*@*head: pointer to struct pointer params
-*@str - char* params
-*Return: list_t struct 
+*@head: pointer to struct pointer params
+*@str: char* params
+*Return: list_t struct
 */
 
 list_t *add_node_end(list_t **head, const char *str)
