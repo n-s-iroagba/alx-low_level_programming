@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
  * before_main - Prints something before main
  *
