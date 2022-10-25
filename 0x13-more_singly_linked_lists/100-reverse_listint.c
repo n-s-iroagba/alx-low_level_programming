@@ -6,7 +6,7 @@
  *Return: listint_t reversed head
  */
 
-listint_t *reverse_listnt(listint_t **head)
+listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *prev, *curr;
 
@@ -31,5 +31,21 @@ listint_t *reverse_listnt(listint_t **head)
 	*head = prev;
 
 	return (*head);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 }
