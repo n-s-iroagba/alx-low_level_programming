@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 /**
  *pop_listint - function
@@ -14,9 +14,9 @@ int pop_listint(listint_t **head)
 		{
 			return (0);
 		}
-	data = *head->n;
+	data = (*head)->n;
 	temp = *head;
-	*head = *head->next;
+	*head = (*head)->next;
 	free(temp);
 
 	return (data);
