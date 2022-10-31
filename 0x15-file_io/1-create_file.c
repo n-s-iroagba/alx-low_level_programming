@@ -15,7 +15,7 @@ size_t len = 1;
 if (!filename)
 return (-1);
 
-fd = open(filename, O_RDONLY);
+fd = open(filename, O_RDONLY | O_TRUNC);
 
 if (fd < 1)
 {
@@ -26,7 +26,6 @@ return (-1);
 
 }
 
-ftruncate(fd, 0);
 
 if (!text_content)
 return (1);
