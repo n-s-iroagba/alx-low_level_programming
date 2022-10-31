@@ -13,7 +13,7 @@ int fd, i;
 size_t len = 1;
 
 if (!filename)
-return (-1)
+return (-1);
 
 fd = open(filename, O_RDONLY);
 
